@@ -5,11 +5,11 @@
 
 A character-level RNN implementation for sentence generation and classification using Apache MXNet (Gluon API).
 
-## 📖 Overview
+## <img src=".github/icons/book.svg" width="16" height="16" alt="book"> Overview
 
 This project implements a character-level Recurrent Neural Network (RNN) for Chinese text generation. The model learns patterns from a corpus of medical questions and can generate new questions based on given prefixes.
 
-## 🚀 Quick Start
+## <img src=".github/icons/rocket.svg" width="16" height="16" alt="rocket"> Quick Start
 
 ### Prerequisites
 
@@ -31,7 +31,7 @@ Update the file paths in `rnn_haodf_scratch.py` to point to your data files.
 python rnn_haodf_scratch.py
 ```
 
-## 📁 Project Structure
+## <img src=".github/icons/folder.svg" width="16" height="16" alt="folder"> Project Structure
 
 ```
 sent_classifer/
@@ -65,7 +65,7 @@ Softmax (Vocabulary Distribution)
 | `clipping_theta` | 0.01 | Gradient clipping threshold |
 | `epochs` | 200 | Number of training epochs |
 
-## 📊 Training Details
+## <img src=".github/icons/chart.svg" width="16" height="16" alt="chart"> Training Details
 
 ### Data Iterator
 
@@ -86,7 +86,7 @@ grad_clipping(params, theta, ctx)
 
 Softmax Cross-Entropy Loss with perplexity evaluation.
 
-## 📝 Usage Example
+## <img src=".github/icons/note.svg" width="16" height="16" alt="note"> Usage Example
 
 ```python
 import mxnet as mx
@@ -130,7 +130,7 @@ result = predict_rnn(
 )
 ```
 
-## 🔧 Customization
+## <img src=".github/icons/wrench.svg" width="16" height="16" alt="wrench"> Customization
 
 ### Update Data Paths
 
@@ -150,13 +150,13 @@ Change `hidden_dim` in the hyperparameters section:
 HIDDEN_DIM = 500  # Increase for more capacity, decrease for faster training
 ```
 
-## ⚠️ Known Issues
+## <img src=".github/icons/warning.svg" width="16" height="16" alt="warning"> Known Issues
 
 - Hard-coded file paths need to be updated for your environment
 - Uses deprecated MXNet APIs (asscalar, nd API)
 - No command-line argument support
 
-## 📚 References
+## <img src=".github/icons/book.svg" width="16" height="16" alt="book"> References
 
 - [MXNet Gluon Documentation](https://mxnet.apache.org/api/python/docs/tutorials/)
 - [Understanding LSTM Networks](https://colah.github.io/posts/2015-08-Understanding-LSTMs/)
